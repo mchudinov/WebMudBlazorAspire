@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Project Path="Web/Web.csproj" />
+  <Project Path="WebMudBlazorAspire.AppHost/WebMudBlazorAspire.AppHost.csproj" />
+  <Project Path="WebMudBlazorAspire.ServiceDefaults/WebMudBlazorAspire.ServiceDefaults.csproj" />
+</Solution>

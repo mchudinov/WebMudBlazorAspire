@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Azure;
 using Azure.AI.OpenAI;
 using Library;
@@ -6,10 +5,6 @@ using Serilog;
 using Serilog.Debugging;
 using Serilog.Events;
 using MudBlazor.Services;
-using Microsoft.Extensions.Http.Resilience;
-using Polly;
-using Polly.Fallback;
-using System.Net;
 
 namespace Web;
 

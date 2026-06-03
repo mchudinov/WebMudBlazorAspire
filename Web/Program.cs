@@ -1,5 +1,3 @@
-using Azure;
-using Azure.AI.OpenAI;
 using Library;
 using Serilog;
 using Serilog.Debugging;
@@ -52,11 +50,6 @@ public class Program
 
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
-
-            builder.Services.AddSingleton<Azure.AI.OpenAI.AzureOpenAIClient>(sp =>
-            {
-                return new AzureOpenAIClient(new Uri(settings.AzureOpenAI.Endpoint), new AzureKeyCredential(settings.AzureOpenAI.ApiKey));
-            });
 
             builder.Services.AddMudServices();
 
